@@ -14,7 +14,7 @@ module.exports = class extends Generator {
         message:
           'Enter the plugin name (must start with webdash- ie: webdash-my-plugin): ',
         required: true,
-        default: this.appname.replace(/ /, '-')
+        default: this.appname.replace(/ /g, '-')
       }
     ];
 
