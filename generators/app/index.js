@@ -5,7 +5,7 @@ const _ = require('lodash');
 
 module.exports = class extends Generator {
   prompting() {
-    this.log(`Welcome to the ${chalk.red('generator-webdash-plugin')} generator!`);
+    this.log(`Welcome to the ${chalk.green('generator-webdash-plugin')} generator!`);
 
     const prompts = [
       {
