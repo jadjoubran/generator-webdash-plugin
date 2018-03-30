@@ -75,19 +75,19 @@ module.exports = class extends Generator {
     );
 
     this.fs.copy(
-      this.templatePath('element/test/index.html'),
+      this.templatePath('element_test/index.html'),
       this.destinationPath('test/index.html'),
       { process: this._processWebdashTemplate.bind(this) }
     );
 
     this.fs.copy(
-      this.templatePath('element/test/webdash-template_test.html'),
+      this.templatePath('element_test/webdash-template_test.html'),
       this.destinationPath(`test/${this.elementName}_test.html`),
       { process: this._processWebdashTemplate.bind(this) }
     );
 
     this.fs.copy(
-      this.templatePath('element/demo/index.html'),
+      this.templatePath('element_demo/index.html'),
       this.destinationPath(`demo/index.html`),
       { process: this._processWebdashTemplate.bind(this) }
     );
