@@ -1,0 +1,40 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+
+<dom-module id="webdash-template">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      /*
+      * Some of the available colors
+      * var(--brand), var(--accent), var(--danger), var(--success), var(--alternative)
+      * var(--gray-9), var(--gray-8), var(--gray-7), ... var(--gray-3)
+      * 
+      * these colors can be accessed from JavaScript (if needed)
+      * this.accent = getComputedStyle(this).getPropertyValue('--accent');
+      * https://codetogo.io/how-to-get-css-custom-property-in-javascript/
+      */
+    </style>
+
+
+  </template>
+
+  <script>
+    class WebdashTemplate extends Polymer.Element {
+      static get is() { return 'webdash-template'; }
+
+      ready() {
+        this.backend = new Backend(WebdashTemplate.is);
+        this.run();
+      }
+
+      run(){
+        //your custom logic here
+      }
+    }
+
+    window.customElements.define(WebdashTemplate.is, WebdashTemplate);
+  </script>
+</dom-module>

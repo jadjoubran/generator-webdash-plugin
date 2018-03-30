@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Jad Joubran",
+      "authorEmail": "joubran.jad@gmail.com",
+      "authorUrl": "https://jadjoubran.io"
+    }
+  }
+}
