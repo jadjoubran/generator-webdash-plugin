@@ -1,4 +1,5 @@
 <link rel="import" href="/bower_components/polymer/polymer-element.html">
+<link rel="import" href="/bower_components/empty-state-webdash/empty-state-webdash.html">
 
 <dom-module id="webdash-template">
   <template>
@@ -18,7 +19,13 @@
       */
     </style>
 
-     webdash-template code here
+    webdash-template code here
+
+    <template is="dom-if" if="{{emptyState}}">
+      <empty-state-webdash title="Empty state title here">
+        Empty state description here
+      </empty-state-webdash>
+    </template>
 
 
   </template>
@@ -32,8 +39,9 @@
         this.run();
       }
 
-      run(){
+      run() {
         //your custom logic here
+        this.emptyState = true;
       }
     }
 
