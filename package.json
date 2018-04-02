@@ -1,6 +1,6 @@
 {
   "name": "generator-webdash-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Yeoman generator for webdash",
   "homepage": "https://webdash.xyz",
   "author": {
