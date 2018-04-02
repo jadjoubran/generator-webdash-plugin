@@ -12,7 +12,7 @@
       * Some of the available colors
       * var(--brand), var(--accent), var(--danger), var(--success), var(--alternative)
       * var(--gray-9), var(--gray-8), var(--gray-7), ... var(--gray-3)
-      * 
+      *
       * these colors can be accessed from JavaScript (if needed)
       * this.accent = getComputedStyle(this).getPropertyValue('--accent');
       * https://codetogo.io/how-to-get-css-custom-property-in-javascript/
@@ -35,6 +35,7 @@
       static get is() { return 'webdash-template'; }
 
       ready() {
+        super.ready();
         this.backend = new Backend(WebdashTemplate.is);
         this.run();
       }
